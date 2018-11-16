@@ -32,7 +32,7 @@ public class UserController {
 		return userService.getByUsername(usernameInput);
 	}
 	
-	@PostMapping(value = "/addnewuser")
+	@PostMapping(value = "/user")
 	public User adduser(@RequestBody User newUser) {
 		return userService.save(newUser);
 	}
